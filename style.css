@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+#home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.circle{
+    height: 150vh;
+    width: 150vh;
+    border-radius: 50%;
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    border: 1px solid rgba(0, 0, 255, 0.126);  
+}
+.innercircle{
+    height: 150vh;
+    width: 150vh;
+    border-radius: 50%;
+    position: absolute;
+    right: -10%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    border: 1px solid rgba(0, 0, 255, 0.412);
+}
+.maincircle{
+    height: 150vh;
+    width: 150vh;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(0%,-50%);
+    right: -8%;
+    top: 50%;
+    background-color: blue; 
+}
+#card1{
+    width: 30%;
+    background-color:white;
+    margin-top: 25%;
+    margin-left: -12%;
+}
+#card1 img{
+    margin: 0 20px;
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+#card1 h3{
+    margin: 10px 10px;
+    font-size: 20px;
+}
+#card1 p{
+    font-size: 12px;
+    opacity: 0.5;
+    padding: 0px 28px;
+}
+#progress{
+    width: 100%;
+    height: 6px;
+    background-color: rgba(128, 128, 128, 0.563);
+    border-radius: 10px;
+    margin: 15px 0;
+}
+#growth{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+#card2{
+    z-index: -1;
+    height: 25%;
+    width: 35%;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 32%;
+    left: 8%;
+}
+#card2 h4{
+    font-size: 20px;
+}
+#card2 p{
+    font-size: 12px;
+    opacity: 0.5;
+    padding-left: 5px;
+}
+#tab{
+    background-color: rgb(232, 247, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:  20px 10px;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid rgb(141, 141, 233);
+}
+#tableft{
+   display: flex;
+   gap: 5px;
+}
+#tableft i{
+    margin: 8px 10px;
+    font-size: 20px;
+    background-color: blue;
+    padding: 8px 10px;
+    border-radius: 5px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+#tableft h5{
+    padding: 10px 0;
+    font-size: 15px;
+    opacity: 0.6;
+}#tableft p{
+    font-size: 12px;
+    opacity: 0.5;
+    padding-left: 5px;
+}
+#select i{
+    font-size: 20px;
+    color: blue;
+}
+#tab-2{
+    display: flex;
+    align-items: center; 
+    margin:  5px 10px;
+    height: 30%;
+    border-radius: 10px;
+    border: 1px solid rgb(141, 141, 233);
+}
+#tab-2 i{
+    margin: 0 20px;
+    color: blue;
+    font-size: 25px;
+    padding: 6px 10px;
+     border: 1px solid rgb(141, 141, 233);;
+    border-radius: 5px;
+}
+#tab-2-text h4{
+    font-size: 15px;
+    color: black;
+}
+#tab-2-text p{
+    font-size: 10px;
+    color: black;
+    opacity: 0.5;
+}
+#card3{   
+     margin: 23% -15%;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+#card3 #doc{
+    height: 60px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color:rgba(127, 255, 212, 0.362);
+    width: fit-content;
+}
+#doc img{
+    height: 20px;
+    width: 20px;  
+    border-radius: 50%;
+}
+#text h2{
+    height: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+#text h4{
+    padding: 10px;
+    height: 15px;
+    opacity: 0.8;
+    font-weight: 500;
+    color: black;
+}
+#doc-3{
+    height: 60px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+}
+#doc-3 #text h2{
+    height: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+#doc-3 #text h4{
+    padding: 20px;
+    height: 15px;
+    opacity: 0.8;
+    font-weight: 500;
+    color: black;
+}
+#doc-3 i{
+    color:blue;
+    font-size: 30px;
+}
+#doc-2{
+    height: 60px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+}
+#doc-2 #text h2{
+    height: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+#doc-2 #text h4{
+    padding: 20px;
+    height: 15px;
+    opacity: 0.8;
+    font-weight: 500;
+    color: black;
+}
+#doc-2 i{
+    color:blue;
+    font-size: 30px;
+}
+ #bottom{
+     z-index: 9999;
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%,0);
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px black;
+
+    
+}
+.btmelem{
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+    height: 100px;
+
+}
+.btmelem h5{
+    margin: 10px 10px;
+    color: blue;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.btmelem h2{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.btmelem h4{
+    padding: 5px;
+    font-size: 15px;
+   opacity: 0.5;
+}
+#left{
+   position: absolute;
+   top: 50%;
+   left: 10%;
+   transform: translate(-50%,-50%);
+   padding: 10px 15%;
+    
+}
+img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+#left h1{
+    padding: 10px 15%;
+    opacity: 0.9;
+    font-size: 50px;
+  font-family: rubik;
+    font-weight: 700;
+    color: black;
+}
+#left h4{
+    padding: 0px 15%;
+    font-size: 15px;
+    opacity: 0.5;
+    color: black;
+}
+
+#left h3{
+    padding: 0px 15%;
+    font-size: 20px;
+   font-family: roboto;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.725);
+}
+.cen{
+  color: darkblue;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  
+}
+#second{
+    padding: 30px;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+#second h1{
+   font-size: 16px;
+   opacity: 0.4;
+   position: absolute;
+   top: 50% ;
+   left: -3%;
+   transform: translate(0,50%)rotate(90deg);
+}
+#second #circle{
+  height: 60vh ;
+  width: 60vh;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%,-50%);
+}
+#circle #circle-1{
+    height: 30vh;
+    width: 30vh;
+    background-color: rgba(0, 128, 0, 0.227);
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+
+}
+#circle p{
+    font-family: roboto;
+    line-height: 30px;
+    width: 140%;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+#circle h2{
+    font-size: 25px;
+    font-family: rubik;
+    font-weight: 600;
+    color: blue;
+    position: absolute;
+    top: 68%;
+    left: 47%;
+  transform: translate(-50%,-50%);
+}
+#circle h4{  
+font-size: 16px;
+font-family: roboto;
+font-weight: 600;
+opacity: 0.5;
+position: absolute;
+top: 74%;
+left: 45%;
+transform: translate(-50%,-50%);
+}
+#circle #plane{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+   top: 50%;
+    left: 50%;
+   transform: translate(-50%,-50%) rotate(45deg);
+   animation: roll 5s infinite linear;
+}
+
+#circle #plane #micro-circle{
+    background-color:blue;
+    width: 10px;
+    padding:10px;
+    border-radius: 50%;
+    position: absolute;
+   top: 50%;
+    left: 0%;
+   transform: translate(-50%,-50%) rotate(45deg);
+}
+@keyframes roll {
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+#three{
+    height: 100vh;
+    width: 100%;
+    background-color:rgba(128, 128, 128, 0.013);
+    display: flex;
+    position: relative; 
+}
+#threeleft{
+    margin: 0 50px;
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+#threeleft h1{
+    color: black;
+    font-family: rubik;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#threeleft p{
+    padding: 20px 10%;
+    font-size: 10px;
+    color: black;
+    opacity: 0.5;
+}
+#threeleft a{
+    color: blue;
+    text-decoration: none;
+    font-size: 15px;
+}
+#threeright{
+    height: 40%;
+    width: 80%;
+ 
+}
+.row{
+    margin: 0 250px;
+    height: 100%;
+    width: 50%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+     
+
+     
+}
+
+
+.row h2{
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+}
+.row p{
+    
+    font-size: 10px;
+    opacity: 0.5;
+    color: black;
+}
+
+.circle-1{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+    border-radius: 50%;
+    position: relative;
+
+}
+.circle-2{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 0%;
+
+}
+.row-1{
+    margin: 0 250px;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+
+
+}
+
+
+
+.row-1 h2{
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+}
+.row-1 p{
+    
+    font-size: 10px;
+    opacity: 0.5;
+    color: black;
+}
+
+.row-1 .circle-1{
+    height: 100px;
+    width: 100px;
+    background-color:rgba(0, 0, 0, 0.483);
+    border-radius: 50%;
+    position: relative;
+
+}
+.row-1 .circle-2{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 0%;
+
+}
+
+
+
+
+
+
+
+
+  
+      
+    
+
+
+
